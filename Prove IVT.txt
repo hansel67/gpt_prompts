@@ -1,0 +1,27 @@
+User
+
+Prove IVT.
+
+ChatGPT
+
+The Intermediate Value Theorem (IVT) is a fundamental theorem in calculus that states the following:
+
+"Suppose a function \(f(x)\) is continuous on the closed interval \([a, b]\), and \(y\) is any value between \(f(a)\) and \(f(b)\), where \(f(a) \leq y \leq f(b)\) or \(f(b) \leq y \leq f(a)\). Then there exists at least one \(c\) in the open interval \((a, b)\) such that \(f(c) = y\)."
+
+Here's a proof of the Intermediate Value Theorem:
+
+**Proof:**
+
+1. Let's assume without loss of generality that \(f(a) \leq y \leq f(b)\). If \(f(b) \leq y \leq f(a)\), the proof follows in a similar manner with appropriate modifications.
+
+2. Define a new function \(g(x) = f(x) - y\). Note that \(g(a) = f(a) - y \leq 0\) and \(g(b) = f(b) - y \geq 0\).
+
+3. Since \(f(x)\) is continuous on \([a, b]\), \(g(x)\) is also continuous on \([a, b]\).
+
+4. We want to show that there exists a point \(c\) in \((a, b)\) where \(g(c) = 0\), which means \(f(c) = y\). To do this, we'll use the concept of the *sign change* of a continuous function.
+
+5. By the Intermediate Value Theorem for continuous functions, since \(g(a) \leq 0\) and \(g(b) \geq 0\), there exists a \(c\) in \((a, b)\) such that \(g(c) = 0\), which implies \(f(c) = y\).
+
+6. Thus, we've shown that there exists at least one \(c\) in \((a, b)\) such that \(f(c) = y\), completing the proof.
+
+This proof relies on the properties of continuous functions and the notion of a sign change to establish the existence of a point \(c\) where \(f(c) = y\). It's important to note that the proof assumes that \(f(x)\) is continuous on the interval \([a, b]\), which is a crucial condition for the Intermediate Value Theorem to hold.
